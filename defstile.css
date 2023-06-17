@@ -82,6 +82,8 @@ model-viewer {
 
 .firstTitleContainer {
   justify-content: center;
+  position: relative;
+  z-index: 5;
 }
 
 .background {
@@ -215,7 +217,7 @@ model-viewer {
 
 
 /***********************MOBILE*********************/
-@media only screen and (max-aspect-ratio: 99999/100000) {
+@media only screen and (max-aspect-ratio: 1) {
 
   video {
     width: 100%;
