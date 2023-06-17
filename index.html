@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,12 +32,13 @@
   <!-- 3d+testo iniziale -->
   <section class="section-container">
     <div class="background z-1">
-      <model-viewer src="assets/knowledge_network/Memory_Graph.glb" alt="scena 3d" auto-rotate camera-controls ar
+      <model-viewer src="assets/knowledge_network/Memory_Graph.glb" alt="scena 3d" auto-rotate
         ios-src="assets/knowledge_network/Memory_Graph.glb"></model-viewer>
     </div>
-    <div class="d-flex flex-column align-items-start justify-content-center vh-100 text-light px-5 z-2">
+    <div class="d-flex flex-column align-items-start vh-100 text-light px-5 z-2 firstTitleContainer">
       <h1 data-aos="fade-right" data-aos-duration="1500">Learn to<br>remember</h1>
-      <p class="description" data-aos="fade-right" data-aos-duration="2000">BY helps you keep alive the memory of someone<br>who passed away, by keeping them always
+      <p class="description" data-aos="fade-right" data-aos-duration="2000">BY helps you keep alive the memory of
+        someone<br>who passed away, by keeping them always
         close</p>
     </div>
   </section>
@@ -52,7 +53,8 @@
   </div>
   <div class="spacing"></div>
   <!--video-->
-  <div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="d-flex align-items-center justify-content-center videoContainer" data-aos="fade-in"
+    data-aos-duration="1000">
     <video src="assets/images/video_prova.mp4" controls></video>
   </div>
   <div class="spacing"></div>
@@ -83,38 +85,39 @@
     </div>
   </section>
   <div class="spacing"></div>
- <!--footer-->
- <footer class=" py-2 bg-dark text-white text-center position-relative animatedBackground">
-  <div class="container">
-    <div class="row d-flex justify-content-between align-items-center my-2">
-      <div class="col-lg-4 col-md-4 col-sm-6 text-light description">
-        <p>Available on IOS and Android</p>
-        <img src="assets/images/download_appstore.svg" class="w-50 my-2" alt="" href="https://www.apple.com/it/app-store/">
-        <img src="assets/images/download_playstore.svg" class="w-50 my-2" alt="" href="https://play.google.com/store/apps?hl=it&gl=US">
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 text-light my-2">
-        <p class="text-light text-start description">
-          By is an app for grieving people who fear of losing memories. It was developed in the LXD Studio at
-          Politecnico di Milano
-        </p>
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-6 text-light description">
-            <ul>
-              <li href="#" style="font-weight: bold;">TEAM</li>
-              <li href="#">Michela Chignoli</li>
-              <li href="#">Francesca Mattiacci</li>
-              <li href="#">Vanessa Medda</li>
-              <li href="#">Giorgia Nizzolino</li>
-              <li href="#">Benedetta Riccio</li>
-            </ul>
+  <!--footer-->
+  <footer class=" py-2 bg-dark text-white text-center position-relative animatedBackground">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center my-2">
+        <div class="col-lg-4 col-md-4 col-sm-6 text-light description">
+          <p>Available on IOS and Android</p>
+          <img src="assets/images/download_appstore.svg" class="w-50 my-2" alt=""
+            href="https://www.apple.com/it/app-store/">
+          <img src="assets/images/download_playstore.svg" class="w-50 my-2" alt=""
+            href="https://play.google.com/store/apps?hl=it&gl=US">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 text-light my-2">
+          <p class="text-light text-start description">
+            By is an app for grieving people who fear of losing memories. It was developed in the LXD Studio at
+            Politecnico di Milano
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 text-light description">
+          <div>
+            <p href="#" style="font-weight: bold;">TEAM</p>
+            <p class="teamNames" href="#">Michela Chignoli</p>
+            <p class="teamNames" href="#">Francesca Mattiacci</p>
+            <p class="teamNames" href="#">Vanessa Medda</p>
+            <p class="teamNames" href="#">Giorgia Nizzolino</p>
+            <p class="teamNames" href="#">Benedetta Riccio</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <p class="lead mt-5" style="font-size: 10pt;">Copyright &copy; 2023 BY team</p>
-  </div>
-</footer>
-
+    <div class="container">
+      <p class="lead mt-5" style="font-size: 10pt;">Copyright &copy; 2023 BY team</p>
+    </div>
+  </footer>
   <!--Imports a model-viewer JavaScript code -->
   <!--It helps to handle how the 3D Object would be displayed -->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>

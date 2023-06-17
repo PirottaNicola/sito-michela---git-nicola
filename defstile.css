@@ -13,11 +13,11 @@ body {
   background-color: black;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: 'Suisse_Works';
 }
 
-.nav-item{
+.nav-item {
   font-family: 'Suisse_Light';
 }
 
@@ -32,7 +32,7 @@ h2 {
   font-size: clamp(2.5rem, 4vw, 3rem);
 }
 
-h3{
+h3 {
   font-family: 'Suisse_Light';
   font-weight: bold;
 }
@@ -59,7 +59,7 @@ video {
   max-height: 80%;
 }
 
-.card_title{
+.card_title {
   font-family: 'Suisse_Light';
   font-size: 1.3rem;
   color: #999999;
@@ -80,11 +80,19 @@ model-viewer {
   border: none;
 }
 
+.firstTitleContainer {
+  justify-content: center;
+}
+
 .background {
   position: absolute;
   height: 100vh;
   width: 100vw;
   z-index: 0;
+}
+
+.videoContainer {
+  height: 100vh;
 }
 
 .tutto {
@@ -201,5 +209,62 @@ model-viewer {
 
   100% {
     background-position: 0% 69%;
+  }
+}
+
+
+
+/***********************MOBILE*********************/
+@media only screen and (max-aspect-ratio: 99999/100000) {
+
+  video {
+    width: 100%;
+  }
+
+  .spacing {
+    height: 5vh;
+    background-color: black;
+  }
+
+  .background {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+  }
+
+  .firstTitleContainer {
+    margin-top: 15vh;
+    justify-content: start;
+  }
+
+  model-viewer {
+    height: 30vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 30vh;
+    border: none;
+  }
+
+  .videoContainer {
+    height: 50vh;
+  }
+
+  .tutto {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: relative;
+  }
+
+  .text {
+    padding-top: 10%;
+  }
+
+  .teamNames {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
   }
 }
