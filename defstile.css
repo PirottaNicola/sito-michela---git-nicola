@@ -84,6 +84,7 @@ model-viewer {
   justify-content: center;
   position: relative;
   z-index: 5;
+  text-shadow: 2px 2px #000000;
 }
 
 .background {
