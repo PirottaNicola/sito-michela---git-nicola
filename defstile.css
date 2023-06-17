@@ -159,6 +159,14 @@ model-viewer {
   margin-left: auto;
 }
 
+/*AI.html*/
+.dustImage {
+  position: absolute;
+  bottom: -30vh;
+  width: 100%;
+  scale: 1;
+}
+
 /*animazione gradiente footer*/
 .animatedBackground {
   background: linear-gradient(220deg, #803af3, #fd643e, #03f38d);
@@ -269,5 +277,13 @@ model-viewer {
     margin: 0;
     padding: 0;
     line-height: 1.5;
+  }
+
+  /*AI.html*/
+  .dustImage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    scale: 2;
   }
 }
