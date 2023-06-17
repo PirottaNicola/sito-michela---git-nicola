@@ -30,9 +30,9 @@ section{
   background-color: black;
 }
 
-h1{
+h1 {
   font-family: 'Suisse_Works';
-  font-size: 6rem;
+  font-size: clamp(3.5rem, 6vw, 8rem);
   text-align: start;
   color: white;
 }
