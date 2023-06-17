@@ -82,6 +82,9 @@ model-viewer {
 
 .firstTitleContainer {
   justify-content: center;
+  position: relative;
+  z-index: 5;
+  text-shadow: 2px 2px #000000;
 }
 
 .background {
@@ -156,6 +159,14 @@ model-viewer {
   margin-left: auto;
 }
 
+/*AI.html*/
+.dustImage {
+  position: absolute;
+  bottom: -30vh;
+  width: 100%;
+  scale: 1;
+}
+
 /*animazione gradiente footer*/
 .animatedBackground {
   background: linear-gradient(220deg, #803af3, #fd643e, #03f38d);
@@ -215,7 +226,7 @@ model-viewer {
 
 
 /***********************MOBILE*********************/
-@media only screen and (max-aspect-ratio: 99999/100000) {
+@media only screen and (max-aspect-ratio: 1) {
 
   video {
     width: 100%;
@@ -239,11 +250,11 @@ model-viewer {
   }
 
   model-viewer {
-    height: 30vh;
+    height: 50vh;
     width: 100vw;
     position: absolute;
     left: 0;
-    bottom: 30vh;
+    bottom: 20vh;
     border: none;
   }
 
@@ -266,5 +277,13 @@ model-viewer {
     margin: 0;
     padding: 0;
     line-height: 1.5;
+  }
+
+  /*AI.html*/
+  .dustImage {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    scale: 2;
   }
 }
