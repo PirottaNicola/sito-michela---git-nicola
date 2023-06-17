@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BY</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="defstile.css">
+        <!--Imports a model-viewer JavaScript code -->
+        <!--It helps to handle how the 3D Object would be displayed -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="bg-black">
+
+    <!-- barra navigazione -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-family: 'Suisse_Works';" href="#">BY</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AI use</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+         <!--3d model in background-->
+    <div class="tutto">
+    <div class="background">
+        <model-viewer src="images/knowledge_network/scene.gltf" alt="scena 3d" auto-rotate camera-controls ar ios-src="images/knowledge_network/scene.gltf"></model-viewer>
+    </div>
+  
+      <section class="text-light text-center text-sm-start">
+            <div class="container">
+                    <div class="text d-flex flex-column">
+                        <h1 class="my-4 backtext learn w-50 p-3">Learn to remember</h1>
+                        <p class=" my-4 backtext description w-50 p-3">BY helps you keep alive the memory of someone<br>
+                        who passed away, by keeping them always close</p>
+                    </div>
+            </div>
+      </section>
+
+    </div>
+
+<!--mission-->
+<section class="text-light p-5">
+    <div class="container d-md-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="mb-3">Our mission</h2>
+        </div>
+        <div>
+            <p class="mx-5 my-4 lead" >
+               Dealing with the memory of a deceased<br>
+               loved one is a need that is addressed at<br>
+               different times and in different ways for<br>
+               everyone. Our mission is to create a space<br>
+               for doing so, guiding the path of processing.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="spacing"></div>
+
+<!--partners and supporters-->
+<section class="p-5" id="partners">
+    <div class="container d-md-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="mb-5 text-light">Partners and supporters</h2>
+        </div>
+    </div>
+
+        <div class="container d-md-flex justify-content-center align-items-center">
+            <div class="row text-center d-flex align-items-center">
+                <div class="col-sm">
+                    <div class="card text-light">
+                        <div class="h1 my-3 card-image">
+                            <img src="images/knowledge_network/europa.png" alt="">
+                        </div>
+                        <h5 class="card-title">
+                            European Union Patronship
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card text-light">
+                        <div class="h1 my-3 card-image">
+                            <img src="images/knowledge_network/fmfef.png" alt="">
+                        </div>
+                        <h5 class="card-title">
+                            Fondazione Mauro Ferrari e Famiglia
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card text-light">
+                        <div class="h1 my-3 card-image">
+                            <img src="images/knowledge_network/sipsiol.png" alt="">
+                        </div>
+                        <h5 class="card-title">
+                            Società Italiana Psicologi Online
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-sm">
+                    <div class="card text-light">
+                        <div class="h1 my-3 card-image">
+                            <img src="images/knowledge_network/unobravo.png" alt="">
+                        </div>
+                        <h5 class="card-title">
+                            Unobravo
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<div class="spacing"></div>
+<!--footer-->
+<footer class="px-5 py-2 bg-dark text-white text-center position-relative animatedBackground">
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-center my-2">
+            <div class="col text-light lead">
+                <img src="images/knowledge_network/Google_Play_Store_badge_IT.svg.png" class="w-50 my-2" alt="">
+                <img src="images/knowledge_network/download-on-the-app-store-badge.png" class="w-50 my-2" alt="">
+            </div>
+            <div class="col text-light lead">
+                <p class="text-light-lead">
+                    By is an app for grieving people who fear of losing memories. It was developed in the LXD Studio at Politecnico di Milano
+                </p>
+            </div>
+            <div class="col text-light lead">
+                <ul class="ml-5">
+                    <li href="#">Call Center</li>
+                    <li href="#">Email Us</li>
+                    <li href="#">Terms and Conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="lead mt-5" style="font-size: 10pt;">Copyright &copy; 2023 BY team</p>
+    </div>
+</footer>
+
+<script>
+    jQuery(document).ready(function($) {
+   
+       // set the variables
+       var timer;
+       var mouseX = 0, mouseY = 0;
+       var xp = 0, yp =0;
+       var circle = $("#circle");
+   
+       function mouseStopped(){    
+           // if mouse stop moving remove class moving 
+           // it will hide the circle with opacity transition                           
+           circle.removeClass('moving');
+       }
+      
+       $(document).mousemove(function(e){
+           // if mouse start moving add class moving
+           // it will show the circle with opacity transition 
+           circle.addClass('moving');
+           // get the mouse position minus 160px to center the circle
+           mouseX = e.pageX - 160;
+           mouseY = e.pageY - 160; 
+           // if mouse stop moving clear timer and call mouseStopped function
+           clearTimeout(timer);
+           timer=setTimeout(mouseStopped,3000);   
+       });
+       
+       // set the momentum with setInterval function
+       var loop = setInterval(function(){
+          // change 12 to alter damping higher is slower
+          xp += ((mouseX - xp)/6);
+          yp += ((mouseY - yp)/6);
+          circle.css({left: xp +'px', top: yp +'px'});  // 
+       }, 30);
+   
+   });
+   </script>
+   
+   <style>
+   body, html {
+       position: relative;}
+   
+   .notice {
+       z-index: 10;
+   }
+   
+   .full-size { 
+       height : 100%; 
+       width : 100%; 
+       position: absolute; 
+       top : 0; 
+       left : 0;
+   }
+   
+   .circle-follow {
+       position :absolute;
+       overflow : hidden;
+       background: radial-gradient(circle at 50% 50%, rgba(173, 139, 246, 1) 0%, rgba(255, 255, 255, 0) 70%); 
+       width :320px; 
+       height: 320px;
+       top:calc( 50% - 160px); 
+       left:calc( 50% - 160px); 
+       -webkit-border-radius: 160px; 
+       border-radius: 160px;  
+       -webkit-transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
+       transition: opacity 0.3s cubic-bezier(0.52, 0.01, 0.16, 1);  
+       opacity : 0; 
+   }
+   
+   .circle-follow.moving {
+       opacity : 1;
+   }
+   
+   
+   /* hack to detect ie11 and above - blend mode not supported */
+   _:-ms-fullscreen, :root .letter-mask {background-color: transparent; }
+   _:-ms-fullscreen, :root .animated-bg {opacity: 0.2;}
+   _:-ms-fullscreen, :root .circle-follow {background-color:#ffffff; opacity: 0.2; }
+   
+   </style>
+   
+   <!-- This demo is inspired by the awesome nurturedigital website created by Bryan James. You can view it at http://nurturedigital.com -->
+   
+   <div class="wrapper full-size">
+       <!-- This div handle the background color -->
+       <div class="mask-bg-color full-size">
+       </div>
+       <!-- This div  wrap all other elements with blend-mode multiply apply -->
+       <div class="blend-multiply full-size">	
+           <!-- This div handle the background element (could be an image, a video or in that case a gif) -->
+           <div class="animated-bg full-size">
+           </div>
+           <!-- This div wrap the masked element with blend-mode screen apply and background-color set as #ffffff = white background -->
+           <div class="blend-screen element-mask full-size">
+               <!-- This span display the masked element-->
+               <span id="circle" class="circle-follow">
+               </span>
+           </div>
+       </div>
+   </div>
+   
+   <div class="notice">
+   </div>
+
+    </body>
+</html>

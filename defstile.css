@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Suisse_Light';
+  src: url(assets/fonts/SuisseIntl-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Suisse_Works';
+  src: url(assets/fonts/SuisseWorks-Regular.otf) format("opentype");
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.navbar-brand{
+  font-family: 'Suisse_Works';
+}
+
+.nav-item{
+  font-family: 'Suisse_Light';
+}
+
+h1 {
+  font-family: 'Suisse_Works';
+  font-size: clamp(3.5rem, 7vw, 8rem);
+  text-align: start;
+}
+
+h2 {
+  font-family: 'Suisse_Light';
+  font-size: clamp(2.5rem, 4vw, 3rem);
+}
+
+h3{
+  font-family: 'Suisse_Light';
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Suisse_Light';
+  font-size: 1.25rem;
+}
+
+.text-extrabig {
+  font-family: 'Suisse_Works';
+  font-size: clamp(1.5rem, 2vw, 4rem);
+  text-align: start;
+  color: #999999;
+}
+
+.spacing {
+  height: 10em;
+  background-color: black;
+}
+
+video {
+  width: 80%;
+  max-height: 80%;
+}
+
+.card_title{
+  font-family: 'Suisse_Light';
+  font-size: 1.3rem;
+  color: #999999;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* This styles the 3D object*/
+model-viewer {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  left: 0;
+  border: none;
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.tutto {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  position: relative;
+}
+
+.text {
+  padding-top: 10%;
+}
+
+/*grandezza minima, variabile, grandezza massima*/
+#big-title {
+  font-size: clamp(3rem, 8vw, 10rem);
+  line-height: normal;
+}
+
+.accordion {
+  --bs-accordion-color: white;
+  --bs-accordion-bg: black;
+  --bs-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  --bs-accordion-border-color: white;
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-btn-color: white;
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052c65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-active-color: black;
+  --bs-accordion-active-bg: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button {
+  font-family: 'Suisse_Works';
+  font-size: 3rem;
+}
+
+.accordion-body {
+  color: white;
+  background-color: black;
+  font-family: 'Suisse_Light';
+  font-size: 1.25rem;
+}
+
+.container-fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*animazione gradiente footer*/
+.animatedBackground {
+  background: linear-gradient(220deg, #803af3, #fd643e, #03f38d);
+  background-size: 600% 600%;
+  -webkit-animation: gradientAnim 40s ease infinite;
+  -moz-animation: gradientAnim 40s ease infinite;
+  animation: gradientAnim 40s ease infinite;
+}
+
+.animatedBackground * {
+  color: white !important;
+  border-color: white !important;
+}
+
+@-webkit-keyframes gradientAnim {
+  0% {
+    background-position: 0% 69%;
+  }
+
+  50% {
+    background-position: 100% 32%;
+  }
+
+  100% {
+    background-position: 0% 69%;
+  }
+}
+
+@-moz-keyframes gradientAnim {
+  0% {
+    background-position: 0% 69%;
+  }
+
+  50% {
+    background-position: 100% 32%;
+  }
+
+  100% {
+    background-position: 0% 69%;
+  }
+}
+
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 69%;
+  }
+
+  50% {
+    background-position: 100% 32%;
+  }
+
+  100% {
+    background-position: 0% 69%;
+  }
+}
