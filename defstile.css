@@ -8,7 +8,15 @@
   src: url(assets/fonts/SuisseWorks-Regular.otf) format("opentype");
 }
 
+html {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
+  position: relative;
+  height: 100vh;
   overflow-x: hidden;
   background-color: black;
 }
@@ -139,7 +147,7 @@ model-viewer {
 
 .accordion-button {
   font-family: 'Suisse_Works';
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 2vw, 3rem);
 }
 
 .accordion-body {
@@ -226,7 +234,7 @@ model-viewer {
 
 
 /***********************MOBILE*********************/
-@media only screen and (max-aspect-ratio: 1) {
+@media only screen and (max-width: 992px) {
 
   video {
     width: 100%;
@@ -282,8 +290,12 @@ model-viewer {
   /*AI.html*/
   .dustImage {
     position: absolute;
-    bottom: 0;
+    bottom: 15vh;
     width: 100%;
-    scale: 2;
+    scale: 1;
+  }
+
+  .accordionHeader {
+    font-size: normal !important;
   }
 }
