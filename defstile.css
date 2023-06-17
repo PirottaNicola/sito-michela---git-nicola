@@ -242,11 +242,11 @@ model-viewer {
   }
 
   model-viewer {
-    height: 30vh;
+    height: 50vh;
     width: 100vw;
     position: absolute;
     left: 0;
-    bottom: 30vh;
+    bottom: 20vh;
     border: none;
   }
 
