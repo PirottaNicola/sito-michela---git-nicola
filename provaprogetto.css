@@ -8,17 +8,17 @@
   src: url(assets/fonts/SuisseWorks-Regular.otf) format("opentype");
 }
 
-body{
+body {
   overflow: hidden;
 }
 
-.container_scroll{
+.container_scroll {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
 }
 
-section{
+section {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,7 +26,11 @@ section{
   scroll-snap-align: start;
 }
 
-.one, .two, .three, .four, .five{
+.one,
+.two,
+.three,
+.four,
+.five {
   background-color: black;
 }
 
@@ -37,16 +41,28 @@ h1 {
   color: white;
 }
 
-.description{
+.description {
   font-family: 'Suisse_Light';
   font-size: 1.25rem;
   color: white;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-family: 'Suisse_Works';
 }
 
-.nav-item{
+.nav-item {
   font-family: 'Suisse_Light';
+}
+
+.squareContent {
+  min-width: 40vw;
+  max-height: 80vh;
+}
+
+/***********************MOBILE*********************/
+@media only screen and (max-width: 992px) {
+  .squareContent {
+    min-width: 60vw;
+  }
 }

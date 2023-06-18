@@ -11,3 +11,14 @@ container_scroll.addEventListener('scroll', () => {
   })
  }
 }) */
+
+
+//*al caricamento del modello, attiva animazione
+
+document.addEventListener('DOMContentLoaded', () => {
+ const allVideos = document.querySelectorAll('#video');
+ allVideos.forEach(element => {
+  console.log('play video 1');
+  element.play()
+ });
+})
