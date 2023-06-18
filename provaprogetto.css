@@ -1,3 +1,4 @@
+/*font importati*/
 @font-face {
   font-family: 'Suisse_Light';
   src: url(assets/fonts/SuisseIntl-Light.otf) format("opentype");
@@ -12,12 +13,23 @@ body {
   overflow: hidden;
 }
 
+/*barra di navigazione*/
+.navbar-brand {
+  font-family: 'Suisse_Works';
+}
+
+.nav-item {
+  font-family: 'Suisse_Light';
+}
+
+/*container totale x scroll snap*/
 .container_scroll {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
 }
 
+/*container totale x scroll snap*/
 section {
   height: 100vh;
   display: flex;
@@ -26,6 +38,7 @@ section {
   scroll-snap-align: start;
 }
 
+/*singole sezioni*/
 .one,
 .two,
 .three,
@@ -36,9 +49,14 @@ section {
   padding-top: 10vh;
 }
 
+.squareContent {
+  max-height: 90vh;
+}
+
+/*elementi tipografici*/
 h1 {
   font-family: 'Suisse_Works';
-  font-size: clamp(3.5rem, 6vw, 8rem);
+  font-size: clamp(3.5rem, 4.5vw, 8rem);
   text-align: start;
   color: white;
   line-height: 100%;
@@ -48,18 +66,6 @@ h1 {
   font-family: 'Suisse_Light';
   font-size: 1.25rem;
   color: white;
-}
-
-.navbar-brand {
-  font-family: 'Suisse_Works';
-}
-
-.nav-item {
-  font-family: 'Suisse_Light';
-}
-
-.squareContent {
-  max-height: 90vh;
 }
 
 
