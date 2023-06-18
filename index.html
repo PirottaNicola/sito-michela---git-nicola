@@ -7,7 +7,7 @@
   <title>BY</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="defstile.css">
+  <link rel="stylesheet" href="mystyle.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -23,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"> <a class="nav-link active" href="/index.html">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="/provaprogetto.html">The project</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/project.html">The project</a></li>
           <li class="nav-item"> <a class="nav-link" href="/AI.html">AI use</a> </li>
         </ul>
       </div>
@@ -31,7 +31,7 @@
   </nav>
   <!-- 3d+testo iniziale -->
   <section class="section-container">
-    <div class="background">
+    <div class="model z-1">
       <model-viewer src="assets/3D-model/Memory_Graph.glb" alt="scena 3d" auto-rotate
         ios-src="assets/3D-model/Memory_Graph.glb"></model-viewer>
     </div>
@@ -114,19 +114,18 @@
       <p class="lead mt-5" style="font-size: 10pt;">Copyright &copy; 2023 BY</p>
     </div>
   </footer>
-
   <!--js di bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
     integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
     crossorigin="anonymous"></script>
-    <!--js per animazioni-->
+  <!--js per animazioni-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
-    <!--js per 3d model-->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <!--js per 3d model-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </body>
 
 </html>
