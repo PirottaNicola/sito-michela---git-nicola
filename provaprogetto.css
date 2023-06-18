@@ -39,6 +39,7 @@ h1 {
   font-size: clamp(3.5rem, 6vw, 8rem);
   text-align: start;
   color: white;
+  line-height: 100%;
 }
 
 .description {
@@ -64,5 +65,10 @@ h1 {
 @media only screen and (max-width: 992px) {
   .squareContent {
     min-width: 60vw;
+  }
+
+  .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #1a1a1a !important;
   }
 }

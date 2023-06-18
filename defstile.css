@@ -29,10 +29,16 @@ body {
   font-family: 'Suisse_Light';
 }
 
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #1a1a1a !important;
+}
+
 h1 {
   font-family: 'Suisse_Works';
   font-size: clamp(3.5rem, 7vw, 8rem);
   text-align: start;
+  line-height: 100%;
 }
 
 h2 {
