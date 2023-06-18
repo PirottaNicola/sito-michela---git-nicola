@@ -195,11 +195,11 @@ model-viewer {
 
 /*animazione gradiente footer*/
 .animatedBackground {
-  background: linear-gradient(220deg, #803af3, #fd643e, #03f38d);
+  background: linear-gradient(220deg, #211B6B, #6D5CD0, #9B6CC9);
   background-size: 600% 600%;
-  -webkit-animation: gradientAnim 40s ease infinite;
-  -moz-animation: gradientAnim 40s ease infinite;
-  animation: gradientAnim 40s ease infinite;
+  -webkit-animation: gradientAnim 20s ease infinite;
+  -moz-animation: gradientAnim 20s ease infinite;
+  animation: gradientAnim 20s ease infinite;
 }
 
 .animatedBackground * {

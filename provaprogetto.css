@@ -13,13 +13,18 @@ body {
   overflow: hidden;
 }
 
-/*barra di navigazione*/
+/*navbar*/
 .navbar-brand {
   font-family: 'Suisse_Works';
 }
 
 .nav-item {
   font-family: 'Suisse_Light';
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #1a1a1a !important;
 }
 
 /*container totale x scroll snap*/
