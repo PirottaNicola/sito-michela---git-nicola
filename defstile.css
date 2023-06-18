@@ -167,6 +167,12 @@ model-viewer {
   margin-left: auto;
 }
 
+.teamNames {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
 /*AI.html*/
 .dustImage {
   position: absolute;
