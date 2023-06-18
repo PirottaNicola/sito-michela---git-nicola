@@ -106,10 +106,11 @@ video {
   max-height: 80%;
 }
 
-.background {
+.model {
   position: absolute;
   height: 100vh;
   width: 100vw;
+  transform: translateX(20vw);
   z-index: 0;
 }
 
@@ -117,7 +118,7 @@ video {
   height: 100vh;
 }
 
-.tutto{
+.tutto {
   height: 100vh;
   width: 100vw;
   display: block;
@@ -263,10 +264,11 @@ model-viewer {
     background-color: black;
   }
 
-  .background {
+  .model {
     position: absolute;
     height: 100vh;
     width: 100vw;
+    transform: translateX(0);
     z-index: 0;
   }
 
