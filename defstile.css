@@ -53,9 +53,10 @@ h2 {
 h3 {
   font-family: 'Suisse_Light';
   font-weight: bold;
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
-.description {
+.description, .footer-description {
   font-family: 'Suisse_Light';
   font-size: 1.25rem;
 }
@@ -82,17 +83,8 @@ li {
 .firstTitleContainer {
   justify-content: center;
   position: relative;
-  z-index: 5;
+  z-index: 1;
   text-shadow: 2px 2px #000000;
-}
-
-.text {
-  padding-top: 10%;
-}
-
-#big-title {
-  font-size: clamp(3rem, 8vw, 10rem);
-  line-height: normal;
 }
 
 /*impostazioni multimediali e di pagina*/
@@ -115,13 +107,6 @@ video {
 
 .videoContainer {
   height: 100vh;
-}
-
-.tutto{
-  height: 100vh;
-  width: 100vw;
-  display: block;
-  position: relative;
 }
 
 .container-fluid {
@@ -189,8 +174,9 @@ model-viewer {
 /*footer*/
 .teamNames {
   margin: 0;
-  padding: 0;
+  padding-left: 40%;
   line-height: 1.5;
+  text-align: start;
 }
 
 /*animazione gradiente footer*/
@@ -254,25 +240,11 @@ model-viewer {
 /***********************MOBILE*********************/
 @media only screen and (max-width: 992px) {
 
-  video {
-    width: 100%;
-  }
-
-  .spacing {
-    height: 5vh;
-    background-color: black;
-  }
-
   .background {
     position: absolute;
     height: 100vh;
     width: 100vw;
     z-index: 0;
-  }
-
-  .firstTitleContainer {
-    margin-top: 15vh;
-    justify-content: start;
   }
 
   model-viewer {
@@ -284,25 +256,22 @@ model-viewer {
     border: none;
   }
 
+  video {
+    width: 100%;
+  }
+
   .videoContainer {
     height: 50vh;
   }
 
-  .tutto {
-    height: 100vh;
-    width: 100vw;
-    display: block;
-    position: relative;
+  .spacing {
+    height: 5vh;
+    background-color: black;
   }
 
-  .text {
-    padding-top: 10%;
-  }
-
-  .teamNames {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
+  .firstTitleContainer {
+    margin-top: 15vh;
+    justify-content: start;
   }
 
   /*AI.html*/
@@ -315,5 +284,19 @@ model-viewer {
 
   .accordionHeader {
     font-size: normal !important;
+  }
+
+  /*footer*/
+  .teamNames {
+    margin: 0;
+    padding-left: 0;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .footer-description {
+    font-family: 'Suisse_Light';
+    font-size: 1.2rem;
+    text-align: center;
   }
 }
