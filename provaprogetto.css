@@ -32,6 +32,8 @@ section {
 .four,
 .five {
   background-color: black;
+  height: 100%;
+  padding-top: 10vh;
 }
 
 h1 {
@@ -57,9 +59,9 @@ h1 {
 }
 
 .squareContent {
-  min-width: 40vw;
-  max-height: 80vh;
+  max-height: 90vh;
 }
+
 
 /***********************MOBILE*********************/
 @media only screen and (max-width: 992px) {
