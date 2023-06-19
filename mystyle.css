@@ -56,7 +56,8 @@ h3 {
   font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 
-.description, .footer-description {
+.description,
+.footer-description {
   font-family: 'Suisse_Light';
   font-size: 1.25rem;
 }
@@ -304,7 +305,8 @@ model-viewer {
   }
 }
 
-#preloader{
+#preloader {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -317,7 +319,7 @@ model-viewer {
   z-index: 9999;
 }
 
-#loading-gif{
+#loading-gif {
   height: 700px;
   width: auto;
 }

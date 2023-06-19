@@ -1,18 +1,20 @@
-// Function to show the loading screen
-function showLoadingScreen() {
-    document.getElementById('preloader').style.display = 'flex';
-  }
-  
-  // Function to hide the loading screen
-  function hideLoadingScreen() {
+// Hide the loading screen when page is fully loaded
+let windowLoaded = false
+let modelLoaded = false
+
+document.querySelector('#model-viewer').addEventListener('load', () => {
+  console.log('model loaded');
+  modelLoaded = true
+  hideLoadingScreen()
+})
+window.addEventListener('load', () => {
+  console.log('window loaded');
+  windowLoaded = true
+  hideLoadingScreen()
+})
+const hideLoadingScreen = () => {
+  if (windowLoaded && modelLoaded) {
+    console.log('both page and model are loaded');
     document.getElementById('preloader').style.display = 'none';
   }
-  
-  // Delay in milliseconds for the loading screen
-  const loadingDelay = 2000; // Change this value to set your desired delay
-  
-  // Show the loading screen after the delay
-  setTimeout(showLoadingScreen, loadingDelay);
-  
-  // Example usage: Simulate content loading
-  setTimeout(hideLoadingScreen, loadingDelay + 3000); // Hide the loading screen after an additional delay (3 seconds in this example)
+}
