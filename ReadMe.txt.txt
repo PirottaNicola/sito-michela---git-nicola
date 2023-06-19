@@ -1,0 +1,1 @@
+Se aperto localmente sul pc, la pagina index non può caricarsi perchè il caricamento del modello è bloccato dalle CORS policies.
