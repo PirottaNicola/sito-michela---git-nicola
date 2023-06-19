@@ -35,7 +35,7 @@ body {
   height: 100vh;
 }
 
-/*container totale x scroll snap*/
+/*singole sezioni*/
 section {
   height: 100vh;
   display: flex;
@@ -44,7 +44,6 @@ section {
   scroll-snap-align: start;
 }
 
-/*singole sezioni*/
 .one,
 .two,
 .three,

@@ -112,7 +112,6 @@ video {
 }
 
 .container-fluid {
-  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: 0;
@@ -130,7 +129,7 @@ model-viewer {
   border: none;
 }
 
-/*AI.html*/
+/*img AI*/
 .dustImage {
   position: absolute;
   bottom: -30vh;
