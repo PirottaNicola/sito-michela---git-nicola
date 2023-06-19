@@ -178,6 +178,7 @@ model-viewer {
   padding-left: 40%;
   line-height: 1.5;
   text-align: start;
+  font-size: 1.25rem;
 }
 
 /*animazione gradiente footer*/
@@ -236,8 +237,6 @@ model-viewer {
   }
 }
 
-
-
 /***********************MOBILE*********************/
 @media only screen and (max-width: 992px) {
 
@@ -292,13 +291,11 @@ model-viewer {
   .teamNames {
     margin: 0;
     padding-left: 0;
-    line-height: 1.5;
     text-align: center;
   }
 
   .footer-description {
     font-family: 'Suisse_Light';
-    font-size: 1.2rem;
     text-align: center;
   }
 }
