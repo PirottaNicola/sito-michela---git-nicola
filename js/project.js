@@ -1,4 +1,7 @@
-/*la proprietà scroll-snap non supporta le animazioni che ho usato nel resto del sito*/
+/*
+la proprietà scroll-snap non supporta le animazioni che ho usato nel resto del sito. 
+Per questo motivo si è implementata una funzione che durante lo scrolling intercetta i vari elementi da animare ed applica loro la classe aos-animate
+*/
 const aosAnimation = document.querySelectorAll('[data-aos]');
 const observer = new IntersectionObserver((entries) => {
  entries.forEach(entry => {
