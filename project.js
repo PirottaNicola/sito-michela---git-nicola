@@ -1,5 +1,5 @@
 const aosAnimation = document.querySelectorAll('[data-aos]');
-observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
  entries.forEach(entry => {
   if (entry.intersectionRatio > 0) {
    entry.target.classList.add('aos-animate');
