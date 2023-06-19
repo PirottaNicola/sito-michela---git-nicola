@@ -1,12 +1,12 @@
 /*font importati*/
 @font-face {
   font-family: 'Suisse_Light';
-  src: url(assets/fonts/SuisseIntl-Light.otf) format("opentype");
+  src: url(../assets/fonts/SuisseIntl-Light.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'Suisse_Works';
-  src: url(assets/fonts/SuisseWorks-Regular.otf) format("opentype");
+  src: url(../assets/fonts/SuisseWorks-Regular.otf) format("opentype");
 }
 
 body {
@@ -84,5 +84,34 @@ h1 {
   .bg-body-tertiary {
     --bs-bg-opacity: 1;
     background-color: #1a1a1a !important;
+  }
+}
+
+/***********************TABLET*********************/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .squareContent {
+    min-width: 60vw;
+  }
+
+  .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #1a1a1a !important;
+  }
+
+  h1 {
+    font-family: 'Suisse_Works';
+    font-size: clamp(3.5rem, 4.5vw, 8rem);
+    text-align: center;
+    color: white;
+    line-height: 100%;
+  }
+
+  .description {
+    font-family: 'Suisse_Light';
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }

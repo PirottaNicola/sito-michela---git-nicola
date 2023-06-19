@@ -1,12 +1,12 @@
 /*font importati*/
 @font-face {
   font-family: 'Suisse_Light';
-  src: url(assets/fonts/SuisseIntl-Light.otf) format("opentype");
+  src: url(../assets/fonts/SuisseIntl-Light.otf) format("opentype");
 }
 
 @font-face {
   font-family: 'Suisse_Works';
-  src: url(assets/fonts/SuisseWorks-Regular.otf) format("opentype");
+  src: url(../assets/fonts/SuisseWorks-Regular.otf) format("opentype");
 }
 
 /*impostazioni generali*/
@@ -40,7 +40,7 @@ body {
 /*elementi testuali*/
 h1 {
   font-family: 'Suisse_Works';
-  font-size: clamp(3.5rem, 7vw, 8rem);
+  font-size: clamp(4rem, 7vw, 8rem);
   text-align: start;
   line-height: 100%;
 }
@@ -239,8 +239,8 @@ model-viewer {
 }
 
 /***********************MOBILE*********************/
-@media only screen and (max-width: 992px) {
-
+@media only screen and (max-width: 576px){
+  
   .model {
     position: absolute;
     height: 100vh;
@@ -255,6 +255,73 @@ model-viewer {
     position: absolute;
     left: 0;
     bottom: 20vh;
+    border: none;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .videoContainer {
+    height: 50vh;
+  }
+
+  .spacing {
+    height: 5vh;
+    background-color: black;
+  }
+
+  .firstTitleContainer {
+    margin-top: 20vh;
+    justify-content: start;
+  }
+
+  /*AI.html*/
+  .dustImage {
+    position: absolute;
+    bottom: 30vh;
+    width: 100%;
+    scale: 1;
+  }
+
+  .accordionHeader {
+    font-size: normal !important;
+  }
+
+  /*footer*/
+  .teamNames {
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .footer-description {
+    font-family: 'Suisse_Light';
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+/***********************TABLET*********************/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+
+  .model {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(0);
+    z-index: 0;
+  }
+
+  model-viewer {
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    bottom: 30vh;
     border: none;
   }
 
