@@ -1,3 +1,4 @@
+/*la proprietà scroll-snap non supporta le animazioni che ho usato nel resto del sito*/
 const aosAnimation = document.querySelectorAll('[data-aos]');
 const observer = new IntersectionObserver((entries) => {
  entries.forEach(entry => {
