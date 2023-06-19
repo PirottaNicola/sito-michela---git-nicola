@@ -238,8 +238,8 @@ model-viewer {
 }
 
 /***********************MOBILE*********************/
-@media only screen and (max-width: 576px){
-  
+@media only screen and (max-width: 576px) {
+
   .model {
     position: absolute;
     height: 100vh;
@@ -371,6 +371,7 @@ model-viewer {
   }
 }
 
+/*loading screen*/
 #preloader {
   display: flex;
   position: fixed;
