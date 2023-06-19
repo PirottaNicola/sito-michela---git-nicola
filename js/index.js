@@ -1,20 +1,18 @@
-// Hide the loading screen when page is fully loaded
+/*
+Si implementa la funzione hideLoadingScreen() che è incaricata di nascondere la schermata di caricamento non appena la pagina (e in particolare il modello 3d al suo interno) è stata completamente caricata
+*/
 let windowLoaded = false
 let modelLoaded = false
-
 document.querySelector('#model-viewer').addEventListener('load', () => {
-  console.log('model loaded');
   modelLoaded = true
   hideLoadingScreen()
 })
 window.addEventListener('load', () => {
-  console.log('window loaded');
   windowLoaded = true
   hideLoadingScreen()
 })
 const hideLoadingScreen = () => {
   if (windowLoaded && modelLoaded) {
-    console.log('both page and model are loaded');
     document.getElementById('preloader').style.display = 'none';
   }
 }
