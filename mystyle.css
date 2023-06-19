@@ -178,7 +178,7 @@ model-viewer {
   padding-left: 40%;
   line-height: 1.5;
   text-align: start;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 /*animazione gradiente footer*/
@@ -271,14 +271,14 @@ model-viewer {
   }
 
   .firstTitleContainer {
-    margin-top: 15vh;
+    margin-top: 30vh;
     justify-content: start;
   }
 
   /*AI.html*/
   .dustImage {
     position: absolute;
-    bottom: 15vh;
+    bottom: 30vh;
     width: 100%;
     scale: 1;
   }
@@ -292,10 +292,14 @@ model-viewer {
     margin: 0;
     padding-left: 0;
     text-align: center;
+    font-size: 1rem;
   }
 
   .footer-description {
     font-family: 'Suisse_Light';
     text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
